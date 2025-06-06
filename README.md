@@ -4,14 +4,14 @@ Desafio técnico em Flutter para a Liderate
 
 ---
 
-## 📱 App de Agendamentos com Upload de Imagens
+##  App de Agendamentos com Upload de Imagens
 
 Este projeto Flutter permite ao usuário cadastrar agendamentos com título, descrição, data, hora e uma ou mais imagens.  
 O app utiliza arquitetura em camadas (**domain**, **presentation**, **data**) e o estado é gerenciado com o **Provider**.
 
 ---
 
-## ✨ Funcionalidades
+##  Funcionalidades
 
 - Criar novo agendamento com:
   - Título
