@@ -46,7 +46,7 @@ cd desafio_liderate
 flutter pub get
 ```
 
-### ▶ Executar o app
+###  Executar o app
 
 ```bash
 flutter run
