@@ -2,55 +2,86 @@
 
 Desafio técnico em Flutter para a Liderate
 
-App de Agendamentos com Upload de Imagens
-Este projeto Flutter permite ao usuário cadastrar agendamentos com título, descrição, data, hora e uma ou mais imagens. O app utiliza arquitetura em camadas (domain, presentation, data) e o estado é gerenciado com o Provider.
+---
 
-Funcionalidades
-Criar novo agendamento com:
-Título
-Descrição
-Data e Hora
-Múltiplas imagens (galeria)
-Visualização dos agendamentos em uma lista com imagem, título e descrição
-Salvamento local em memória
+## 📱 App de Agendamentos com Upload de Imagens
 
-Como Rodar o Projeto
-1. Pré-requisitos
-Flutter SDK
-Dispositivo físico ou emulador Android/iOS configurado
+Este projeto Flutter permite ao usuário cadastrar agendamentos com título, descrição, data, hora e uma ou mais imagens.  
+O app utiliza arquitetura em camadas (**domain**, **presentation**, **data**) e o estado é gerenciado com o **Provider**.
 
-2. Clonar o repositório
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+---
 
-3. Instalar dependências
+## ✨ Funcionalidades
+
+- Criar novo agendamento com:
+  - Título
+  - Descrição
+  - Data e Hora
+  - Múltiplas imagens (seleção da galeria)
+- Visualização dos agendamentos em uma lista com:
+  - Imagem
+  - Título
+  - Descrição
+- Salvamento local em memória
+
+---
+
+##  Como Rodar o Projeto
+
+###  Pré-requisitos
+
+- Flutter SDK instalado
+- Dispositivo físico ou emulador Android/iOS configurado
+
+###  Clonar o repositório
+
+```bash
+git clone https://github.com/marysoarez/desafio_liderate.git
+cd desafio_liderate
+```
+
+###  Instalar dependências
+
+```bash
 flutter pub get
+```
 
-4. Executar o app
+### ▶ Executar o app
+
+```bash
 flutter run
+```
 
- 
-Estrutura do Projeto
+---
 
+##  Estrutura do Projeto
+
+```
 lib/
 ├── core/
-│   └── widgets/           → componentes reutilizáveis
+│   └── widgets/            # Componentes reutilizáveis
 ├── features/
 │   └── agendamento_post/
-│       ├── data/          → repositórios e fontes de dados
-│       ├── domain/        → entidades (modelos)
-│       ├── presentation/  → telas, widgets e estado
-│       │   ├── pages/
-│       │   ├── state/
-│       │   └── widgets/
+│       ├── data/           # Repositórios e fontes de dados
+│       ├── domain/         # Entidades (modelos)
+│       ├── presentation/   # Telas, widgets e estado
+│           ├── pages/
+│           ├── state/
+│           └── widgets/
 └── main.dart
+```
 
-Pacotes Utilizados
-provider – Gerenciamento de estado
-uuid – Geração de IDs únicos
-intl – Formatação de datas
-image_picker – Seleção de imagens da galeria
+---
 
+##  Pacotes Utilizados
 
-Autor
-Desenvolvido por Maryangela Soares
+- `provider` – Gerenciamento de estado
+- `uuid` – Geração de IDs únicos
+- `intl` – Formatação de datas
+- `image_picker` – Seleção de imagens da galeria
+
+---
+
+##  Autor
+
+Desenvolvido por **Maryangela Soares**
