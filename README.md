@@ -2,15 +2,55 @@
 
 Desafio técnico em Flutter para a Liderate
 
-## Getting Started
+App de Agendamentos com Upload de Imagens
+Este projeto Flutter permite ao usuário cadastrar agendamentos com título, descrição, data, hora e uma ou mais imagens. O app utiliza arquitetura em camadas (domain, presentation, data) e o estado é gerenciado com o Provider.
 
-This project is a starting point for a Flutter application.
+Funcionalidades
+Criar novo agendamento com:
+Título
+Descrição
+Data e Hora
+Múltiplas imagens (galeria)
+Visualização dos agendamentos em uma lista com imagem, título e descrição
+Salvamento local em memória
 
-A few resources to get you started if this is your first Flutter project:
+Como Rodar o Projeto
+1. Pré-requisitos
+Flutter SDK
+Dispositivo físico ou emulador Android/iOS configurado
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+2. Clonar o repositório
+git clone https://github.com/seu-usuario/seu-repositorio.git
+cd seu-repositorio
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+3. Instalar dependências
+flutter pub get
+
+4. Executar o app
+flutter run
+
+ 
+Estrutura do Projeto
+
+lib/
+├── core/
+│   └── widgets/           → componentes reutilizáveis
+├── features/
+│   └── agendamento_post/
+│       ├── data/          → repositórios e fontes de dados
+│       ├── domain/        → entidades (modelos)
+│       ├── presentation/  → telas, widgets e estado
+│       │   ├── pages/
+│       │   ├── state/
+│       │   └── widgets/
+└── main.dart
+
+Pacotes Utilizados
+provider – Gerenciamento de estado
+uuid – Geração de IDs únicos
+intl – Formatação de datas
+image_picker – Seleção de imagens da galeria
+
+
+Autor
+Desenvolvido por Maryangela Soares
